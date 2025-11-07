@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Valid credentials",
+    "email": "qa@l-earnings.com",
+    "password": "Test@123",
+    "expected": "success"
+  },
+  {
+    "name": "Invalid password",
+    "email": "qa@l-earnings.com",
+    "password": "WrongPass123",
+    "expected": "failure"
+  },
+  {
+    "name": "Invalid email",
+    "email": "wrong@l-earnings.com",
+    "password": "Test@123",
+    "expected": "failure"
+  },
+  {
+    "name": "Empty fields",
+    "email": "",
+    "password": "",
+    "expected": "failure"
+  }
+]
