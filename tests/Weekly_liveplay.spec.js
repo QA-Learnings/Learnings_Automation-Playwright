@@ -46,7 +46,7 @@ test('trailrun', async ({ page }) => {
   await page.getByRole('textbox', { name: 'Password' }).fill('Test@123');
   await page.locator("button[type='submit']").click();
   await page.getByRole('button', { name: 'Close' }).click();
- await page.pause();
+  
   await page.getByRole('button', { name: 'Trial Questions' }).click();
   await page.getByRole('button', { name: 'Start' }).click();
   //await page.locator('button[fdprocessedid="fwbtf"]').click();
