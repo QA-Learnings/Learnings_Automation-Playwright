@@ -21,8 +21,8 @@
 
 // DATA DRIVEN TESTING
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage.js';
-import loginData from '../data/loginData.json' assert { type: 'json' };
+import { LoginPage } from '../../pages/LoginPage.js';
+import loginData from '../../data/loginData.json' assert { type: 'json' };
 
 test.describe('Data-driven Login tests', () => {
   for (const data of loginData) {

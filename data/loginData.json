@@ -1,13 +1,13 @@
 [
   {
     "name": "Valid credentials",
-    "email": "qa@l-earnings.com",
+    "email": "9496528030",
     "password": "Test@123",
     "expected": "success"
   },
   {
     "name": "Invalid password",
-    "email": "qa@l-earnings.com",
+    "email": "9496528030",
     "password": "WrongPass123",
     "expected": "failure"
   },

@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { SignupPage } from '../pages/SignupPage.js';
-import signupData from '../data/signupData.json' assert { type: 'json' };
+import { SignupPage } from '../../pages/SignupPage.js';
+import signupData from '../../data/signupData.json' assert { type: 'json' };
 
 test.describe('Signup Tests - Data Driven', () => {
   for (const data of Array.isArray(signupData) ? signupData : [signupData]) {

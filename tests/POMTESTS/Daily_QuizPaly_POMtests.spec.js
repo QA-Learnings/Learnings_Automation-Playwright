@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { Loginpageforplays } from '../pages/Loginpageforplays.js';
-import { DailyQuizPlayPage } from '../pages/DailyQuizPlayPage';
+import { Loginpageforplays } from '../../pages/Loginpageforplays.js';
+import { DailyQuizPlayPage } from '../../pages/DailyQuizPlayPage.js';
 
 
 test('Main Play Flow - POM', async ({ page }) => {

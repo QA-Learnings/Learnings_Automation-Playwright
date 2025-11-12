@@ -39,7 +39,11 @@ export default defineConfig({
     trace: 'off',  
     
     screenshot: 'only-on-failure',
-    headless:false
+    headless:false,
+      // Grant geolocation permission for tests to avoid native location prompt
+      permissions: ['geolocation'],
+      // Provide a deterministic geolocation so the app receives a stable location
+      geolocation: { latitude: 12.9716, longitude: 77.5946 },
   },
 
   /* Configure projects for major browsers */

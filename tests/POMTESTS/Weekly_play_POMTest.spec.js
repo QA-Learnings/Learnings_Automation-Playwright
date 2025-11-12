@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { Loginpageforplays } from '../pages/Loginpageforplays.js';
-import { WeeklyplayPage } from '../pages/Weeklyplaypage.js';
+import { Loginpageforplays } from '../../pages/Loginpageforplays.js';
+import { WeeklyplayPage } from '../../pages/Weeklyplaypage.js';
 
 
 test('premiumplay - POM', async ({ page }) => {

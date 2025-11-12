@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
-import { Loginpageforplays } from '../pages/Loginpageforplays.js';  
-import { TrialRunPage } from '../pages/TrialRunPage.js';
+import { Loginpageforplays } from '../../pages/Loginpageforplays.js';  
+import { TrialRunPage } from '../../pages/TrialRunPage.js';
 
 
 test('trial run - POM', async ({ page }) => {

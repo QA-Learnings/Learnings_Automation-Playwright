@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+
+"login": "npx playwright test Login.spec.js --project=chromium --headed --ui",
+"signup": "npx playwright test User_Signup_POMTest.spec --project=chromium --headed --ui",
+  "Quiz-WeeklyTrialPlay": "npx playwright test Weekly_Trialrun_POMTest.spec.js  --project=chromium --headed --ui" ,
+  "Quiz-WeeklyPremiumPlay": "npx playwright test Weekly_play_POMTest.spec.js  --project=chromium --headed --ui",
+  "Quiz-DailyPlay":"npx playwright test Daily_QuizPlay_POMtests.spec.js  --project=chromium --headed --ui"
+
+
+
+
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
