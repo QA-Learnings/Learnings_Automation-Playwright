@@ -9,9 +9,9 @@ const play = new WeeklyplayPage(page);
 
 
 await login.goto();
-await login.login('9496528030', 'Test@123');
+await login.login('wosam89743@aikunkun.com', 'Test@123');
 
-
+await play.openWeeklyPlay();
 await play.startGame();
 await play.answerFlow();
 });

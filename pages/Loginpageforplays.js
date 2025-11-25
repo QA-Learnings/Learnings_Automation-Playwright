@@ -14,10 +14,14 @@ export class Loginpageforplays {
         this.confirmLogoutButton = page.getByRole('button', { name: 'Log Out' });
     }
 
-    async goto() {
-        await this.page.goto('https://dev.l-earnings.com/');
-        await expect(this.signInButton).toBeVisible();
-    }
+     async goto() {
+    await this.page.goto('https://qa.l-earnings.com/', {
+        waitUntil: 'domcontentloaded'   // Best practice
+    });
+
+    await this.signInButton.waitFor({ state: 'visible' });
+}
+
 
     async login(email, password) {
         await this.signInButton.click();
