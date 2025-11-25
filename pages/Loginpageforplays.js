@@ -12,6 +12,7 @@ export class Loginpageforplays {
         this.accountSettingsButton = page.getByRole('button', { name: 'Account Settings' });
         this.logoutHeading = page.getByRole('heading', { name: 'Logout' });
         this.confirmLogoutButton = page.getByRole('button', { name: 'Log Out' });
+    //ss
     }
 
      async goto() {

@@ -11,7 +11,7 @@ export class SignupPage {
     this.confirmPasswordInput = page.getByRole('textbox', { name: 'Confirm Password *' });
     this.termsCheckbox = page.getByRole('checkbox', { name: /I agree to Terms/ });
     this.submitButton = page.getByRole('button', { name: 'Sign up' });
-     
+    //sdfs 
     this.verifyButton = page.getByRole('button', { name: 'Verify' });
   }
 

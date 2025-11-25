@@ -8,7 +8,7 @@ this.submitBtn = page.getByRole('button', { name: 'Submit' });
 this.playMoreBtn = page.getByRole('button', { name: 'Play More — Win ₹1 Lakh' });
 }
 
-
+//dd
 option(index) {
 return this.page.locator(
 `body > div:nth-child(1) > div:nth-child(3) > main:nth-child(3) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > button:nth-child(${index})`
