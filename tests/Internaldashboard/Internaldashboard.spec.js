@@ -1,0 +1,37 @@
+import { test, expect } from '@playwright/test';
+
+test('test', async ({ page }) => {
+  await page.goto('https://dev-admin.l-earnings.com/login/');
+  await page.getByRole('textbox', { name: 'Email *' }).click();
+  await page.getByRole('textbox', { name: 'Email *' }).fill('qa@l-earnings.com');
+  await page.getByRole('textbox', { name: 'Password *' }).click();
+  await page.getByRole('textbox', { name: 'Password *' }).fill('Test@123');
+  await page.getByRole('button', { name: 'Login' }).click();
+await page.pause();
+  await page.getByRole('button', { name: 'Regular', exact: true }).click();
+  await page.getByRole('button', { name: 'Create New' }).click();
+  await page.getByRole('textbox', { name: 'Title *' }).click();
+  await page.getByRole('textbox', { name: 'Title *' }).fill('Daily quiz testing');
+  await page.getByRole('textbox', { name: 'Description *' }).click();
+  await page.getByRole('textbox', { name: 'Description *' }).fill('descriptionc');
+  await page.getByRole('textbox', { name: 'Category *' }).click();
+  await page.getByRole('textbox', { name: 'Category *' }).fill('category');
+  await page.getByRole('textbox', { name: 'Category *' }).click();
+  await page.locator('.fixed.right-0').click();
+  await page.getByRole('button', { name: 'Create', exact: true }).click();
+  await page.getByText('Draft @ Creator').click();
+  await page.getByRole('button', { name: 'Add Questions' }).click();
+  await page.getByRole('textbox', { name: 'Start Time *' }).click();
+  await page.getByRole('option', { name: '09:00 PM' }).click();
+  await page.getByRole('textbox', { name: 'End Time *' }).click();
+  await page.getByRole('option', { name: '11:50 PM' }).click();
+  await page.getByText('Upload Excel').click();
+  //await page.locator('label').filter({ hasText: 'Upload Excel' }).setInputFiles('dummy_quiz_15_questions.xlsx');
+  //await page.getByRole('main').click();
+  await page.getByRole('button', { name: 'Submit' }).click();
+  await page.locator('div').filter({ hasText: 'Internal Dashboard' }).nth(3).click();
+  await page.getByRole('button', { name: 'Back' }).click();
+  await page.getByText('a minute ago, 06:35 PM').click();
+  await page.getByRole('button', { name: 'Send for Review' }).click();
+  await page.getByRole('button', { name: 'Send for Review' }).nth(1).click();
+});

@@ -9,7 +9,7 @@ const trial = new TrialRunPage(page);
 
 
 await login.goto();
-await login.login('binithatesting2025@gmail.com', 'Test@123');
+await login.login('gepisa5882@aikunkun.com', 'Test@123');
 
 
 

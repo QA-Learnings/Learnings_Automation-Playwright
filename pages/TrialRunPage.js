@@ -1,13 +1,17 @@
 export class TrialRunPage {
 constructor(page) {
 this.page = page;
+//this.trialBtn = page.getByRole('button', { name: 'Trial Questions' });
 this.trialBtn = page.getByRole('button', { name: 'Trial Questions' });
+//this.startBtn = page.getByRole('button', { name: 'Start' });
 this.startBtn = page.getByRole('button', { name: 'Start' });
 this.nextBtn = page.getByRole('button', { name: 'Next' });
 this.prevBtn = page.getByRole('button', { name: 'Previous' });
 this.previewBtn = page.getByRole('button', { name: 'Preview' });
 this.editAnswerBtn = page.getByRole('button', { name: 'Edit Answer' });
 this.submitBtn = page.locator('button:has-text("Submit")');
+this.weekplay=page.getByRole('button', { name: 'Weekly Smartplay' });
+
 }
 
 
@@ -17,6 +21,7 @@ return this.page.locator(`//body//div//div//div//div//div//div//div//button[${in
 
 
 async openTrial() {
+await this.weekplay.click();
 await this.trialBtn.click();
 await this.startBtn.click();
 }
